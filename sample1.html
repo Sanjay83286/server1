@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text">
+        <button>click me</button>
+    </form>
+    <script>
+        form1=document.querySelector("form")
+        form1.addEventListener("submit",(e)=>{
+            e.preventDefault()
+        })
+        async function fun(){
+           data2=await fetch("http://localhost:3000/data",{         
+           method:'GET'
+           })
+            new11=await data2.json()
+            console.log(new11)
+        top21=document.createElement("div");
+        top21.style.display="flex";
+        top21.style.width="100vw"
+
+        new11.forEach((val,ind) => {
+            outside=document.createElement("div");
+            inside=document.createElement("p")
+            inside.innerText=`${val.name}:${val.id}`
+           console.log(val)
+           inside.style.width="100px";
+           inside.style.height="400px";
+           outside.append(inside);
+           top21.append(outside)
+
+        });
+        document.body.append(top21)
+        }
+
+
+        fun()
+
+           
+     
+
+    </script>
+</body>
+</html>

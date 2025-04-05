@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <button onclick="fun()">click me</button> -->
+ <form>
+ <input type="text" >
+ <input type="age" >
+ <button>click</button>
+</form>
+    <script>
+btn=document.querySelector("form");
+btn.addEventListener("submit",(e)=>{
+    e.preventDefault()
+    console.log(e)
+
+    // console.log(obj)
+       fun(e)
+})
+async function fun(e){
+    obj={
+        name:e.target[0].value,
+        age:e.target[1].value
+        
+    }
+
+    // data=await fetch("http://localhost:3000/data",{
+    //     method:"POST",
+    //     headers:{
+    //      "Content-Type":"application/json"
+    //     },
+    //     body:JSON.stringify(obj)
+    // });
+    data1=await fetch("http://localhost:3000/data")
+    convert=await data1.json();
+    console.log("sam",convert)
+
+    console.log("sanjay");
+}
+    </script>
+</body>
+</html>

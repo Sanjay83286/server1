@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p1>Product Management</p1>
+    <div class="top">
+        <div class="one">
+            <p>one</p>
+            <form>
+            <label>ENTER Id</label>
+            <input type="number" placeholder="ENTER VALUE">
+            <label>ENTER NAME</label>
+            <input type="text" placeholder="ENTER NAME">
+            <label>ENTER PRICE  </label>
+            <input type="text" placeholder="ENTER PRICE">
+            <button>create</button>
+           </form>
+        </div>
+        <div class="two">
+            <p>two</p>
+            <form>
+            <label>ENTER Id</label>
+            <input type="number" placeholder="ENTER VALUE">
+            <label>ENTER NAME</label>
+            <input type="text" placeholder="ENTER NAME">
+            <label>ENTER PRICE  </label>
+            <input type="text" placeholder="ENTER PRICE">
+            <button>UPADTE</button>
+            </form>
+        </div>
+        <div class="three">
+            <form>
+            <label>ENTER Id</label>
+            <input type="number" placeholder="ENTER VALUE">
+            <button>SUbmit</butto>
+            </form>
+        </div>
+
+    </div>
+    </div>
+    <div class="parentsome">
+      <!-- <div class="some1">
+
+      </div> -->
+    </div>
+    <div class="special">
+
+    </div>
+    <script>
+        grandparent=document.querySelector(".top");
+
+        special=document.querySelector(".special");
+        // some1=document.createElement("div");
+        parentsome=document.querySelector(".parentsome");
+        // some1=document.querySelector(".some1");
+        name1=document.querySelector("#name");
+        price=document.querySelector("#price");
+        id1=document.querySelector("#id1");
+        parent1=document.querySelector(".one form");
+        parent2=document.querySelector(".two form");
+        parent3=document.querySelector(".three form")
+        console.log(parentsome);
+
+        //upadatediv
+        updatediv=document.createElement("div");
+        updatediv.style.display="flex";
+        updatediv.style.gap="60px";
+        // parentsome.append(some1);
+
+        
+        console.log(grandparent);
+        grandparent.style.display="flex";
+        grandparent.style.gap="60px";
+        parent1.style.display="flex";
+        parent1.style.gap="10px";
+        parent1.style.flexDirection="column";
+        // some1.style.display="inlineblock";
+        // parentsome.style.width="100vw";
+        parentsome.style.display="flex";
+        // parentsome.style.justifyContent="center";
+
+
+        parent2.style.gap="10px";
+        parent2.style.display="flex";
+        parent2.style.flexDirection="column";
+
+
+        parent3.style.gap="10px";
+        parent3.style.display="flex";
+        parent3.style.flexDirection="column";
+        special.style.display="flex";
+
+
+
+// //creating  ids 
+// parent1.addEventListener("submit",(e)=>{
+//     e.preventDefault()
+   
+//     console.log(parentsome)
+//         fun1(e)
+//     })
+
+//     async function fun1(e){
+        
+//       response=await fetch(" http://localhost:3000/data",{
+//         method:"POST",
+//         headers:{
+//             "Content-Type":"application/json"
+//         },
+//         body:JSON.stringify(obj={
+//             id:e.target[0].value,
+//             NAME:e.target[1].value,
+//             PRICE:e.target[2].value
+//         })
+//       })
+//       b=await response.json()
+//       console.log(b);
+//       some1=document.createElement("div");
+//     some1.style.display="inline-block";
+
+//       some1.style.border="2px solid black"
+
+//     for(i in b){
+//         console.log(i,b[i])
+//         name1=document.createElement("p");
+//         name1.innerText=`${i}:${b[i]}`
+//         console.log(name1)
+//         some1.append(name1)
+//     }
+//     parentsome.append(some1);
+//     grandparent.after(parentsome);
+//     }
+
+// //get function based on id
+// parent3.addEventListener("submit",(e)=>{
+//      fun2(e)
+// });
+
+// async function fun2(e){
+//     special.style.gap="50px"
+//     e.preventDefault()
+//    id=e.target[0].value
+//    console.log(id)
+//    data=await fetch(`http://localhost:3000/data/${id}`,{
+//       method:"get"
+
+//    })
+
+//    get1=await data.json()
+//    console.log(get1)
+//    new1=document.createElement("div")
+//    new1.style.border="2px solid black"
+//    for(i in get1){
+//       console.log(i,":",get1[i])
+//       p1=document.createElement("p")
+//       p1.innerText=`${i}:${get1[i]}`
+//       new1.append(p1);
+//    }
+//    special.append(new1)
+// grandparent.after(special)
+
+// }
+
+// //updation 
+// parent2.addEventListener("submit",(e)=>{
+
+//     fun3(e)
+// });
+// async function fun3(e){
+//     e.preventDefault();
+//     // ID=e.target[0].value
+//     //  NAME=e.target[1].value
+//     //  PRICE=e.target[2].value
+//     //  console.log(ID,NAME,PRICE)
+//     special.style.display="none";
+//      let id2=e.target[0].value;
+//      data3=await fetch(`http://localhost:3000/data/${id2}`,{
+//         method:"PUT",
+//         headers:{
+//             "Content-Type":"application/json"
+//         },
+//         body:JSON.stringify(obj={
+//             NAME:e.target[1].value,
+//             PRICE:e.target[2].value
+//         })
+//      })
+//      convert1=await data3.json();
+//      console.log(convert1);
+//      updatetop=document.createElement("div");
+//      updatetop.style.border="2px solid black"
+//      for(i in convert1){
+//         updated=document.createElement("p");
+//         updated.innerText=`${i}:${convert1[i]}`
+//         updatetop.append(updated)
+    
+//      }
+//      updatediv.append(updatetop)
+//      grandparent.after(updatediv)
+
+
+// }
+
+
+
+
+    // ... existing code ...
+
+    parent1.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fun1(e);
+    });
+
+    async function fun1(e) {
+        const formData = {
+            id: e.target[0].value,
+            NAME: e.target[1].value,
+            PRICE: e.target[2].value
+        };
+
+        const response = await fetch("http://localhost:3000/data", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        });
+        const newProduct = await response.json();
+
+        const productDiv = document.createElement("div");
+        productDiv.id= `product-${newProduct.id}`; // Assign unique ID
+        productDiv.style.border = "2px solid black";
+
+        for (const key in newProduct) {
+            const p = document.createElement("p");
+            p.innerText = `${key}: ${newProduct[key]}`;
+            productDiv.appendChild(p);
+        }
+
+        parentsome.appendChild(productDiv);
+    }
+
+    parent3.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fun2(e);
+    });
+
+    async function fun2(e) {
+        const id = e.target[0].value;
+        const response = await fetch(`http://localhost:3000/data/${id}`);
+        const product = await response.json();
+
+        special.innerHTML = ""; // Clear previous result
+
+        const productDiv = document.createElement("div");
+        productDiv.style.border = "2px solid black";
+
+        for (const key in product) {
+            const p = document.createElement("p");
+            p.innerText = `${key}: ${product[key]}`;
+            productDiv.appendChild(p);
+        }
+
+        special.appendChild(productDiv);
+    }
+
+    parent2.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fun3(e);
+    });
+
+    async function fun3(e) {
+         id = e.target[0].value
+         formData = {
+            NAME: e.target[1].value,
+            PRICE: e.target[2].value
+        };
+
+        const response = await fetch(`http://localhost:3000/data/${id}`, {
+            method: "PUT",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData)
+        });
+        const updatedProduct = await response.json();
+
+        // Find existing product div and update it
+        const productDiv = document.getElementById(`product-${id}`);
+        if (productDiv) {
+            productDiv.innerHTML = ""; // Clear existing content
+            for (const key in updatedProduct) {
+                const p = document.createElement("p");
+                p.innerText = `${key}: ${updatedProduct[key]}`;
+                productDiv.appendChild(p);
+            }
+        }
+    }
+
+
+
+ 
+
+    </script>
+</body>
+</html>
