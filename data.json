@@ -2,16 +2,16 @@
   "data": [
      {
        id :1
-      name: "RRR",
-      image: "https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
-      rating: 4.8,
-      comments: ["Powerful movie", "Great visuals"]
+      "name": "RRR",
+      "image": "https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
+      "rating": 4.8,
+      "comments": ["Powerful movie", "Great visuals"]
     },
     {
-      name: "Pushpa",
-      image: "https://upload.wikimedia.org/wikipedia/en/7/7f/Pushpa_-_The_Rise_%282021_film%29.jpg",
-      rating: 4.5,
-      comments: ["Stylish star!", "Mass scenes are fire"]
+      "name": "Pushpa",
+      "image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Pushpa_-_The_Rise_%282021_film%29.jpg",
+      "rating": 4.5,
+      "comments": ["Stylish star!", "Mass scenes are fire"]
     },
     {
       "name": "123",
