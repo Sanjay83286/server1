@@ -1,7 +1,7 @@
 
   "data": [
      {
-       id :1
+       "id" :1
       "name": "RRR",
       "image": "https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg",
       "rating": 4.8,
