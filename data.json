@@ -15,11 +15,11 @@
       "comments": "Stylish star!  Mass scenes are fire"
     },
     {
-      id:"3",
-  name: "Salaar",
-  image: "https://upload.wikimedia.org/wikipedia/en/5/5f/Salaar_Part_1_-_Ceasefire.jpg",
-  rating: "4.6",
-  comments: "Massive action! Prabhas is back", "Great BGM"
+      "id":"3",
+  "name": "Salaar",
+  "image": "https://upload.wikimedia.org/wikipedia/en/5/5f/Salaar_Part_1_-_Ceasefire.jpg",
+  "rating": "4.6",
+  "comments": "Massive action! Prabhas is back", "Great BGM"
 }
   ]
 
