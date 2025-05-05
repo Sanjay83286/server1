@@ -10,10 +10,17 @@
     {
       "id" :"2",
       "name": "Pushpa",
-      "image": "https://upload.wikimedia.org/wikipedia/en/7/7f/Pushpa_-_The_Rise_%282021_film%29.jpg",
+      "image": "https://www.livemint.com/lm-img/img/2024/12/24/optimize/GeWVPKabUAA1fzl_1733902914216_1735001421400.jpg",
       "rating": "4.5",
       "comments": "Stylish star!  Mass scenes are fire"
-    }
+    },
+    {
+      id:"3",
+  name: "Salaar",
+  image: "https://upload.wikimedia.org/wikipedia/en/5/5f/Salaar_Part_1_-_Ceasefire.jpg",
+  rating: "4.6",
+  comments: "Massive action! Prabhas is back", "Great BGM"
+}
   ]
 
 }
